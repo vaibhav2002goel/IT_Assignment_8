@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+		body{
+                background-color: #EEE0C9;
+            }
+            #div1{
+                margin-left: 467px;
+                margin-top : 40px;
+                font-size:40px;
+            }
+            #employeeId{
+                margin-left: 306px;
+                height: 40px;
+                width: 300px;
+                margin-top: -5px;
+            }
+
+            #div2{
+                margin-left: 467px;
+                margin-top : 40px;
+                font-size:40px;
+            }
+            #name{
+                margin-left: 230px;
+                height: 40px;
+                width: 300px;
+                margin-top: -5px;
+            }
+
+            #div3{
+                margin-left: 383px;
+                margin-top : 40px;
+                font-size:40px;
+            }
+
+            #title{
+                margin-left:90px;
+            }
+            #jobTitle{
+                margin-left: 172px;
+                height: 40px;
+                width: 300px;
+                margin-top: -5px;
+            }
+            
+             #submit-btn{
+                text-decoration: none;
+			    display: block;
+			    width: 115px;
+			    height: 50px;
+			    background: #4E9CAF;
+			    padding: 10px;
+			    text-align: center;
+			    border-radius: 5px;
+			    color: white;
+			    font-weight: bold;
+			    line-height: 25px;
+                margin-left:829px;
+                margin-top: 40px;
+                font-size: 25px;
+            }
+
+            
+
+            #submit-btn:hover{
+                box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            }
+
+           
+
+            input{
+                font-size: 25px;
+                background-color: #F1F0E8; 
+            }
+
+            #data-table{
+                margin:auto;
+                width:500px;
+            }
+
+            .error-align{
+                font-size: 20px;
+                /* margin-left:310px; */
+            }
+
+            li{
+                color: red;
+                font-size: 30px;
+            }
+
+        </style>
+
+
+<body>
+	
+	<h1 style="text-align:center; text-decoration: underline;"> Enter your Details </h1>
+
+        <form action="department" method="post" style="border: 5px solid red; padding:20px;">
+			
+			
+			
+            <div id="div1">
+                <label id="employee" for="employeeId">Department Id : </label>
+                <input id="employeeId" type="number" name="departmentId"  >
+                 
+            </div>
+                <br>
+
+            <div id="div2">
+                <label id="employeeName" for="name">Department Name : </label>
+                <input id="name" type="text" name="name" >
+                           </div>
+                <br>
+
+            <div id="div3">
+                <label id="title" for="jobTitle">Department Location : </label>
+                <input id="jobTitle" type="text" name="departmentLocation"  >
+                           </div>
+                <br>
+                
+           	<input id="submit-btn" value="Submit"  type="submit">
+            	
+            
+        <div id="errors">
+		</div>
+        </form>
+        
+		
+		<script type="text/javascript" src="departmentValidation.js"></script>
+	
+	
+</body>
+</html>
